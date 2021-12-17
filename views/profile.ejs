@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/fav.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="profile.css">
+    <title>Profile</title>
+</head>
+<body>
+    <div class="profile-info">
+     <h3 class="heading">UserProfile</h3>
+     <div class="User-Creditals">
+         <img width="60px" height="60px" style="border-radius: 50%;" src="images/user.jpg" alt="userinfo">
+         <h4 style="padding: 5px;padding-top: 0px;  color: rgb(11, 117, 150);;"><%=Fname%><%=Lname%></h4>
+         <h5 style="padding: 5px;padding-top: 0px;  color: rgb(11, 117, 150);" name="EMAil"><%=email%></h5>
+        
+       <form action="profile" method="POST">
+        <input type="string" name="PhoneNumber" placeholder="Phone Number" style="padding-top: 5px;padding-bottom: 5px; height: 15px;width: 200px;">
+        <button class="btn">Save</button>
+       </form>
+       <h4 style="color: rgb(0, 217, 255);background-color: whitesmoke;"><%=Updated%></h4>
+      <p style="color: red;">Please Provide Your Number So that We can Send You the Latest Score Of Your Favourite Match Via Message.</p>
+        </div>
+    </div>
+</body>
+</html>

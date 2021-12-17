@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/fav.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mainPage.css">
+    <title>CricketWorld</title>
+</head>
+<body>
+    <div class="webHead">
+        <div class="webHeadLogo"><img src="images/Cricket-Website-logo.jpg" alt="cricketlogo" class="logoImg"></div>
+        <div class="anouncement" id="navb">
+            <a href="livescore">Live Score</a>
+            <div class="headReg" id="reg">
+                <a href="login" class="aLogin" >Login</a>
+                <a href="Signup" class="aSignup">Signup</a>
+            </div>
+                <a href="javascript:void(0);" class="bar" onclick="navbar()">&#9776;</a>
+         </div>
+    </div>
+    <hr style="height: 4px; background-color: rgb(255, 94, 0);margin-top: 1px;">
+
+    <div class="ScrollingBanners">
+      
+        <div class="Match fade">
+            <div class="toss">
+    <marquee behavior="scroll" width="100%" direction="left" style="z-index: -1;"><%=M1Toss%></marquee>
+            </div> 
+            <div class="inings">Innings<%=M1Innings%></div>
+                  <div class="runs">
+                      <div class="teams">
+                      <span class="team1"><%=M1Team1%></span><span><p style="display: inline-block;" class="vsText">Vs</p></span>
+                       <span class="team2"><%=M1Team2%></span>
+                     </div>
+                     <div class="run-overs">
+                   <div class="run"><%=M1Runs%>/<%=M1Wickets%></div>
+                   <div class="overs"><%=M1Overs%></div>
+                    </div>
+                    <div class="batsmen">
+                   <div class="batsmen1"><%=M1PlayingBatsmen1Name%>*: <%=M1PlayingBatsmen1Runs%></div>
+                   <div class="batsmen2"><%=M1PlayingBatsmen2Name%>*: <%=M1PlayingBatsmen2Runs%></div>
+                     </div>
+                     <div class="bowler">
+                     <p><%=M1CurrentBowlerName%>:<%=M1CurrentBowlerGivenRuns%>/<%=M1CurrentBowlerWickets%>(<%=M1CurrentBowlerOvers%>)</p>
+                    </div>
+                    <h4><%=Innings1T1Name%>-<%=Innings1T1Runs%>/<%=Innings1T1Wickets%></h4>
+                   <div class="batsmen-bowlers">
+                   <table style="width: 100%;">
+                       <thead>
+                          <tr>
+                              <th>Batsmen</th>
+                              <th>Bowler</th>
+                          </tr>
+                       </thead>
+                       <tbody>
+                           <tr>
+                               <td><%=M1Batsmen1%>: <%=M1BatsMen1Runs%></td>
+                               <td><%=M1Bowler1Name%>: <%=M1Bowler1GivenRuns%>/<%=M1Bowler1Wickets%></td>
+                           </tr>
+                           <tr>
+                             <td><%=M1Batsmen2%>: <%=M1BatsMen2Runs%></td>
+                             <td><%=M1Bowler2Name%>: <%=M1Bowler2GivenRuns%>/<%=M1Bowler2Wickets%></td>
+                         </tr>
+                         <tr>
+                             <td><%=M1Batsmen3%>: <%=M1BatsMen3Runs%></td>
+                             <td><%=M1Bowler3Name%>: <%=M1Bowler3GivenRuns%>/<%=M1Bowler3Wickets%></td>
+                         </tr>
+                         <tr>
+                             <td><%=M1Batsmen4%>: <%=M1BatsMen4Runs%></td>
+                             <td><%=M1Bowler4Name%>: <%=M1Bowler4GivenRuns%>/<%=M1Bowler4Wickets%></td>
+                         </tr>
+                       </tbody>
+                   </table>
+                    </div>
+                     <div style="margin-top: 10px;">
+                   <marquee behavior="scroll" width="100%" direction="left">Team1 Playing 11</marquee>
+                    </div>
+                    <div style="margin-top: 5px;">
+                     <marquee behavior="scroll" width="100%" direction="left">Team2 Playing 11</marquee>
+                     </div>
+                </div>
+                </div>
+
+                <div class="Match fade">
+                    <div class="toss">
+            <marquee behavior="scroll" width="100%" direction="left" style="z-index: -1;"><%=M2Toss%></marquee>
+                    </div> 
+                    <div class="inings">Innings<%=M2Innings%></div>
+                          <div class="runs">
+                              <div class="teams">
+                              <span class="team1"><%=M2Team1%></span><span><p style="display: inline-block;" class="vsText">Vs</p></span>
+                               <span class="team2"><%=M2Team2%></span>
+                             </div>
+                             <div class="run-overs">
+                           <div class="run"><%=M2Runs%>/<%=M2Wickets%></div>
+                           <div class="overs"><%=M2Overs%></div>
+                            </div>
+                            <div class="batsmen">
+                           <div class="batsmen1"><%=M2PlayingBatsmen1Name%>*: <%=M2PlayingBatsmen1Runs%></div>
+                           <div class="batsmen2"><%=M2PlayingBatsmen2Name%>*: <%=M2PlayingBatsmen2Runs%></div>
+                             </div>
+                             <div class="bowler">
+                             <p><%=M2CurrentBowlerName%>:<%=M2CurrentBowlerGivenRuns%>/<%=M2CurrentBowlerWickets%>(<%=M2CurrentBowlerOvers%>)</p>
+                            </div>
+                            <h4><%=Innings1T2Name%>-<%=Innings1T2Runs%>/<%=Innings1T2Wickets%></h4>
+                           <div class="batsmen-bowlers">
+                           <table style="width: 100%;">
+                               <thead>
+                                  <tr>
+                                      <th>Batsmen</th>
+                                      <th>Bowler</th>
+                                  </tr>
+                               </thead>
+                               <tbody>
+                                   <tr>
+                                       <td><%=M2Batsmen1%>: <%=M2BatsMen1Runs%></td>
+                                       <td><%=M2Bowler1Name%>: <%=M2Bowler1GivenRuns%>/<%=M2Bowler1Wickets%></td>
+                                   </tr>
+                                   <tr>
+                                     <td><%=M2Batsmen2%>: <%=M2BatsMen2Runs%></td>
+                                     <td><%=M2Bowler2Name%>: <%=M2Bowler2GivenRuns%>/<%=M2Bowler2Wickets%></td>
+                                 </tr>
+                                 <tr>
+                                     <td><%=M2Batsmen3%>: <%=M2BatsMen3Runs%></td>
+                                     <td><%=M2Bowler3Name%>: <%=M2Bowler3GivenRuns%>/<%=M2Bowler3Wickets%></td>
+                                 </tr>
+                                 <tr>
+                                     <td><%=M2Batsmen4%>: <%=M2BatsMen4Runs%></td>
+                                     <td><%=M2Bowler4Name%>: <%=M2Bowler4GivenRuns%>/<%=M2Bowler4Wickets%></td>
+                                 </tr>
+                               </tbody>
+                           </table>
+                            </div>
+                             <div style="margin-top: 10px;">
+                           <marquee behavior="scroll" width="100%" direction="left">Team1 Playing 11</marquee>
+                            </div>
+                            <div style="margin-top: 5px;">
+                             <marquee behavior="scroll" width="100%" direction="left">Team2 Playing 11</marquee>
+                             </div>
+                        </div>
+                        </div>
+                        
+                       <div class="Match fade">
+                      <div class="toss">
+<marquee behavior="scroll" width="100%" direction="left" style="z-index: -1;"><%=M3Toss%></marquee>
+        </div> 
+        <div class="inings">Innings<%=M3Innings%></div>
+              <div class="runs">
+                  <div class="teams">
+                  <span class="team1"><%=M3Team1%></span><span><p style="display: inline-block;" class="vsText">Vs</p></span>
+                   <span class="team2"><%=M3Team2%></span>
+                 </div>
+                 <div class="run-overs">
+               <div class="run"><%=M3Runs%>/<%=M3Wickets%></div>
+               <div class="overs"><%=M3Overs%></div>
+                </div>
+                <div class="batsmen">
+               <div class="batsmen1"><%=M3PlayingBatsmen1Name%>*: <%=M3PlayingBatsmen1Runs%></div>
+               <div class="batsmen2"><%=M3PlayingBatsmen2Name%>*: <%=M3PlayingBatsmen2Runs%></div>
+                 </div>
+                 <div class="bowler">
+                 <p><%=M3CurrentBowlerName%>:<%=M3CurrentBowlerGivenRuns%>/<%=M3CurrentBowlerWickets%>(<%=M3CurrentBowlerOvers%>)</p>
+                </div>
+                <h4><%=Innings1T3Name%>-<%=Innings1T3Runs%>/<%=Innings1T3Wickets%></h4>
+               <div class="batsmen-bowlers">
+               <table style="width: 100%;">
+                   <thead>
+                      <tr>
+                          <th>Batsmen</th>
+                          <th>Bowler</th>
+                      </tr>
+                   </thead>
+                   <tbody>
+                       <tr>
+                           <td><%=M3Batsmen1%>: <%=M3BatsMen1Runs%></td>
+                           <td><%=M3Bowler1Name%>: <%=M3Bowler1GivenRuns%>/<%=M3Bowler1Wickets%></td>
+                       </tr>
+                       <tr>
+                         <td><%=M3Batsmen2%>: <%=M3BatsMen2Runs%></td>
+                         <td><%=M3Bowler2Name%>: <%=M3Bowler2GivenRuns%>/<%=M3Bowler2Wickets%></td>
+                     </tr>
+                     <tr>
+                         <td><%=M3Batsmen3%>: <%=M3BatsMen3Runs%></td>
+                         <td><%=M3Bowler3Name%>: <%=M3Bowler3GivenRuns%>/<%=M3Bowler3Wickets%></td>
+                     </tr>
+                     <tr>
+                         <td><%=M3Batsmen4%>: <%=M3BatsMen4Runs%></td>
+                         <td><%=M3Bowler4Name%>: <%=M3Bowler4GivenRuns%>/<%=M3Bowler4Wickets%></td>
+                     </tr>
+                   </tbody>
+               </table>
+                </div>
+                 <div style="margin-top: 10px;">
+               <marquee behavior="scroll" width="100%" direction="left">Team1 Playing 11</marquee>
+                </div>
+                <div style="margin-top: 5px;">
+                 <marquee behavior="scroll" width="100%" direction="left">Team2 Playing 11</marquee>
+                 </div>
+            </div>
+            </div>
+
+            <div class="Match fade">
+                <div class="toss">
+<marquee behavior="scroll" width="100%" direction="left" style="z-index: -1;"><%=M4Toss%></marquee>
+  </div> 
+  <div class="inings">Innings<%=M4Innings%></div>
+        <div class="runs">
+            <div class="teams">
+            <span class="team1"><%=M4Team1%></span><span><p style="display: inline-block;" class="vsText">Vs</p></span>
+             <span class="team2"><%=M4Team2%></span>
+           </div>
+           <div class="run-overs">
+         <div class="run"><%=M4Runs%>/<%=M4Wickets%></div>
+         <div class="overs"><%=M4Overs%></div>
+          </div>
+          <div class="batsmen">
+         <div class="batsmen1"><%=M4PlayingBatsmen1Name%>*: <%=M4PlayingBatsmen1Runs%></div>
+         <div class="batsmen2"><%=M4PlayingBatsmen2Name%>*: <%=M4PlayingBatsmen2Runs%></div>
+           </div>
+           <div class="bowler">
+           <p><%=M4CurrentBowlerName%>:<%=M4CurrentBowlerGivenRuns%>/<%=M4CurrentBowlerWickets%>(<%=M4CurrentBowlerOvers%>)</p>
+        </div>
+        <h4><%=Innings1T4Name%>-<%=Innings1T4Runs%>/<%=Innings1T4Wickets%></h4>
+         <div class="batsmen-bowlers">
+         <table style="width: 100%;">
+             <thead>
+                <tr>
+                    <th>Batsmen</th>
+                    <th>Bowler</th>
+                </tr>
+             </thead>
+             <tbody>
+                 <tr>
+                     <td><%=M4Batsmen1%>: <%=M4BatsMen1Runs%></td>
+                     <td><%=M4Bowler1Name%>: <%=M4Bowler1GivenRuns%>/<%=M4Bowler1Wickets%></td>
+                 </tr>
+                 <tr>
+                   <td><%=M4Batsmen2%>: <%=M4BatsMen2Runs%></td>
+                   <td><%=M4Bowler2Name%>: <%=M4Bowler2GivenRuns%>/<%=M4Bowler2Wickets%></td>
+               </tr>
+               <tr>
+                   <td><%=M4Batsmen3%>: <%=M4BatsMen3Runs%></td>
+                   <td><%=M4Bowler3Name%>: <%=M4Bowler3GivenRuns%>/<%=M4Bowler3Wickets%></td>
+               </tr>
+               <tr>
+                   <td><%=M4Batsmen4%>: <%=M4BatsMen4Runs%></td>
+                   <td><%=M4Bowler4Name%>: <%=M4Bowler4GivenRuns%>/<%=M4Bowler4Wickets%></td>
+               </tr>
+             </tbody>
+         </table>
+          </div>
+           <div style="margin-top: 10px;">
+         <marquee behavior="scroll" width="100%" direction="left">Team1 Playing 11</marquee>
+          </div>
+          <div style="margin-top: 5px;">
+           <marquee behavior="scroll" width="100%" direction="left">Team2 Playing 11</marquee>
+           </div>
+      </div>
+      </div>
+      
+         <div class=" Match Streaming fade">
+           <h1>Hello</h1>
+         </div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+     </div>-->
+<br>
+<br>
+<div style="text-align: center;">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+
+
+
+    <footer class="footer">
+        <a href="Aboutus.html" class="aboutUs">AboutUs</a>
+        <a href="privacyPolicy.html" class="privacyPolicy">PrivacyPolicy</a>
+        <a href="developersInfo.html" class="developersInfo">DevelopersInfo</a>
+        <p class="copyright">&copy;Copyright 2021</p>
+    </footer>
+    <script src="mainPage.js"></script>
+</body>
+</html>

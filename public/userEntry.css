@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.userInfo{
+    background-color: rgb(81, 157, 219);
+}
+.userimg{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+}
+.select-div{
+    margin-top: 15px;
+    text-align: center;
+}
+
+/*match box*/
+.ScrollingBanners{
+    position: relative;
+    top: 20px;
+    margin: auto;
+    width: 90%;
+    height: 350px;
+    background-color: #EAF6F6;
+}
+.Match{
+    width: 100%;
+    height: 100%;
+}
+.toss{
+    width: 100%;
+    height: 7%;
+    text-align: center;
+    background-color: rgb(176, 255, 251);
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+.inings{
+    text-align: center;
+    color: rgb(231, 50, 50);
+    background-color:rgb(196, 230, 230);;
+}
+.inings:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 247, 255);
+}
+.runs{
+    width: 100%;
+    height: 26%;
+    background-color: white;
+    text-align: center;
+   border-top-left-radius: 8%;
+   border-top-right-radius: 8%;
+   border-bottom-left-radius: 8%;
+   border-bottom-right-radius: 8%;
+}
+.teams{
+    display: inline-block;
+  position: relative;
+  bottom: 15px;
+  right: 5px;
+
+}
+.team1{
+    font-size: 25px;
+    margin-right: 3px;
+    position: relative;
+    bottom: 5px;
+}
+.vsText{
+    font-size: 23px;
+}
+.team2{
+    font-size: 25px;
+    position: relative;
+    top: 12px;
+}
+.run-overs{
+    display: inline-block;
+}
+.run{
+    font-size: 25px;
+}
+.overs{
+    font-size: 25px;
+}
+.batsmen{
+    display: inline-block;
+    position: relative;
+    left: 15px;
+    bottom: 7px;
+}
+.batsmen1{
+    padding-bottom: 4px;
+}
+.batsmen2{
+
+    padding-top: 2px;
+}
+.batsmen-bowlers{
+    margin-top: 6px;
+    display: inline-block;
+    width: 100%;
+    background-color: wheat;
+}
+.bowler{
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+}
+@media screen  and (max-width:500px){
+    .batsmen-bowlers{
+        display: block;
+    }
+    .runs{
+        height: 20%;
+    }
+    .teams{
+        position: relative;
+        bottom: 10px;
+    }
+    .team1{
+        font-size: 13px;
+    }
+    .team2{
+      font-size: 13px;
+      position: relative;
+      top: 8px;
+  }
+  .run{
+      font-size: 13px;
+  }
+  .overs{
+      font-size: 13px;
+  }
+  .batsmen{
+      position: relative;
+      top: 5px;
+  }
+  .batsmen1{
+      font-size: 13px;
+  }
+  .batsmen2{
+      font-size: 13px;
+  }
+  .vsText{
+      font-size: 13px;
+  }
+  .bowler{
+      font-size: 13px;
+  }
+}
+
+#match2{
+    display: none;
+}
+#match3{
+    display: none;
+}
+#match4{
+    display: none;
+}
+
+
+
+/*video-call*/
+.Video-call{
+    width: 100%;
+   
+    border: 0.3px solid black;
+    background-color: rgb(102, 90, 112);
+}
+
+.options-box{
+    width: 100%;
+    background-color: rgb(200, 234, 240);
+    text-align: center;
+    position: relative;
+    top: 0;
+}
+.videobutton{
+    margin-right: 6px;
+    padding-top: 2px;
+    margin-top: 2px;
+}
+#videooff{
+    display: none;
+}
+#micoff{
+    display: none;
+}
+.callbutton{
+    margin-right: 5px;
+}

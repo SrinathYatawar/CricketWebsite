@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+/*website Head Css*/
+.webHead{
+    background-color: rgb(213, 247, 255);
+}
+.webHeadLogo{
+    display: inline-block;
+}
+.logoImg{
+    width: 150px;
+    height: 85px;
+}
+.anouncement{
+    margin-left: 5%;
+    display: inline-block;
+}
+a{
+        text-decoration: none;
+        font-size: 25px;
+       color: rgb(109, 109, 109);
+       margin-right: 20px;
+       border-radius: 5%;
+    
+}
+.headReg{
+    display: inline-block;
+    position: absolute;
+    right: 4%;
+    top: 4%;
+}
+.aLogin{
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 25px;
+   color: rgb(16, 184, 240);
+}
+.aSignup{
+    text-decoration: none;
+    font-size: 25px;
+   color: rgb(16, 184, 240);
+}
+
+a:hover{
+    background-color: white;
+    color: black;
+}
+/*navbar creation for mobile view*/
+.bar{
+    display: none;
+}
+@media screen and (max-width:700px){
+    .logoImg{
+        width: 110px;
+        height: 75px;
+    }
+    a{
+        font-size: 15px;
+    }
+    .aLogin{
+    font-size: 15px;
+}
+    .aSignup{
+    font-size: 15px;
+}
+}
+@media  screen and (max-width:600px) {
+       a{
+        display: none;
+    }
+    .bar{
+        display: block;
+        position: absolute;
+        right: 4%;
+        top: 6%;
+    }
+    
+}
+@media screen  and (max-width:600px){
+ .anouncementresponsive a{
+     display: block;
+     text-align: center;
+     margin: 0;
+ }
+ .headReg a{
+     margin: 0;
+ }
+}
+
+
+
+/*footer*/
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(67, 180, 255);
+    text-align: center;
+}
+.aboutUs{
+    color: white;
+    font-size: 20px;
+}
+.privacyPolicy{
+    color: white;
+    font-size: 20px;
+}
+.developersInfo{
+    color: white;
+    font-size: 20px;
+}
+
+.copyright{
+    color: white;
+}
+@media screen and (max-width:600px){
+    .aboutUs{
+        margin-right: 0;
+        display:block;
+        font-size: 15px;
+    }
+    .privacyPolicy{
+        margin-right: 0;
+        display:block;
+        font-size: 15px;
+    }
+    .developersInfo{
+        margin-right: 0;
+        display:block;
+        font-size: 15px;
+    }
+    .copyright{
+        display: block;
+    }
+}
+
+
+/*slideshowdata*/
+.ScrollingBanners{
+    position: relative;
+    top: 20px;
+    margin: auto;
+    width: 90%;
+    height: 350px;
+    background-color: #EAF6F6;
+}
+.Match{
+    width: 100%;
+    height: 100%;
+}
+.toss{
+    width: 100%;
+    height: 7%;
+    text-align: center;
+    background-color: rgb(176, 255, 251);
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+.inings{
+    text-align: center;
+    color: rgb(231, 50, 50);
+    background-color:rgb(196, 230, 230);;
+}
+/*.inings:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 247, 255);
+}*/
+.runs{
+    width: 100%;
+    height: 26%;
+    background-color: white;
+    text-align: center;
+   border-top-left-radius: 8%;
+   border-top-right-radius: 8%;
+   border-bottom-left-radius: 8%;
+   border-bottom-right-radius: 8%;
+}
+.teams{
+    display: inline-block;
+  position: relative;
+  bottom: 15px;
+  right: 15px;
+
+}
+.team1{
+    font-size: 18px;
+    margin-right: 3px;
+    position: relative;
+    bottom: 5px;
+}
+.vsText{
+    font-size: 19px;
+}
+.team2{
+    font-size: 18px;
+    position: relative;
+    top: 12px;
+}
+.run-overs{
+    display: inline-block;
+}
+.run{
+    font-size: 20px;
+}
+.overs{
+    font-size: 20px;
+}
+.batsmen{
+    display: inline-block;
+    position: relative;
+    left: 13px;
+    top: 5px;
+}
+.batsmen1{
+    font-size: 18px;
+    padding-bottom: 4px;
+}
+.batsmen2{
+       font-size: 18px;
+    padding-top: 2px;
+}
+td{
+    font-size: 14px;
+}
+
+/*Sliding Css*/
+.prev{
+    position: relative;
+    bottom: 55%;
+    padding: 2px;
+}
+.next{
+    position: relative;
+    bottom: 55%;
+    float: right;
+    margin: 0;
+    padding: 2px;
+}
+.prev:hover{
+    color: white;
+    background-color: black;
+    }
+.next:hover{
+    color: white;
+background-color: black;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+@media screen and (max-width:600px){
+    .prev{
+        display: inline-block;
+    }
+    .next{
+        display: inline-block;
+    }
+    .dot{
+        width: 10px;
+        height: 10px;
+        margin: 0 1px;
+    }
+}
+
+/*table for batsmen-bowler*/
+
+.batsmen-bowlers{
+    margin-top: 6px;
+    display: inline-block;
+    width: 100%;
+    background-color: wheat;
+}
+.bowler{
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+}
+.btn{
+    display: none;
+}
+@media screen  and (max-width:550px){
+
+  .runs{
+      height: 20%;
+  }
+  .teams{
+      position: relative;
+      bottom: 10px;
+  }
+  .team1{
+      font-size: 13px;
+  }
+  .team2{
+    font-size: 13px;
+    position: relative;
+    top: 8px;
+}
+.run{
+    font-size: 13px;
+}
+.overs{
+    font-size: 13px;
+}
+.batsmen{
+    position: relative;
+    top: 5px;
+}
+.batsmen1{
+    font-size: 11px;
+}
+.batsmen2{
+    font-size: 11px;
+}
+.vsText{
+    font-size: 12px;
+}
+.bowler{
+    font-size: 13px;
+}
+td{
+    font-size: 12px;
+}
+.btn {
+    position: relative;
+    top: 65px;
+    display: inline-block;
+    background: #79bfed;
+    background-image: -webkit-linear-gradient(top, #79bfed, #567080);
+    background-image: -moz-linear-gradient(top, #79bfed, #567080);
+    background-image: -ms-linear-gradient(top, #79bfed, #567080);
+    background-image: -o-linear-gradient(top, #79bfed, #567080);
+    background-image: linear-gradient(to bottom, #79bfed, #567080);
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 9px 9px 9px 9px;
+    text-decoration: none;
+    
+  }
+  
+  .btn:hover {
+    background: #49c7ed;
+    background-image: -webkit-linear-gradient(top, #49c7ed, #42b6f5);
+    background-image: -moz-linear-gradient(top, #49c7ed, #42b6f5);
+    background-image: -ms-linear-gradient(top, #49c7ed, #42b6f5);
+    background-image: -o-linear-gradient(top, #49c7ed, #42b6f5);
+    background-image: linear-gradient(to bottom, #49c7ed, #42b6f5);
+    text-decoration: none;
+  }
+}   

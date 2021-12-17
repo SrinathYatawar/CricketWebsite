@@ -1,0 +1,24 @@
+{
+  "name": "cricketweb",
+  "version": "1.0.0",
+  "description": "it is a cricket website.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Srinath",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "mongoose": "^6.0.14",
+    "nodemailer": "^6.7.2",
+    "peerjs": "^1.3.2",
+    "socket.io": "^4.3.1",
+    "uuid": "^8.3.2"
+  }
+}
